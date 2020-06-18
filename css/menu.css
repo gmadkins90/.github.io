@@ -1,0 +1,27 @@
+#mainMenu{
+    width: 20vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: teal;
+}
+
+.b_menu{
+    font-family: "Lucida Sans Unicode";
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    vertical-align: middle;
+    background-color: rgba(191, 191, 191, 0.41);
+    transition:.4s;
+}
+
+.b_menu:hover{
+    background-color: rgba(191, 191, 191, 0.71);
+}
+
+.current{
+    background-color: rgba(191, 191, 191, 0.71);
+}

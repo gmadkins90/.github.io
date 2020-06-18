@@ -1,0 +1,17 @@
+body{
+    display: inline-flex;
+}
+
+#mainWindow{
+    width: 80vw;
+    height: 100vh;
+    background-color: paleturquoise;
+}
+
+.aboutMe{
+    text-align: center;
+}
+
+.projects{
+
+}
