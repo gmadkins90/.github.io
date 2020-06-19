@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Greg Adkins Portfolio</title>
+  <meta name="description" content="G. Adkins About Me">
+  <meta name="author" content="G. Adkins">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
+</nav>
+
+<body>
+    <div id="display" class="fadeIn">
+
+        <div id=mainMenu> <!---Shows different categories, coding projects, about me, etc.-->
+            
+            <a href="index.html" class="b_menu current" id="b_about">About Me</a>
+            <a href="programming.html" class="b_menu" id="b_programming">Programming Projects</a>
+            <a href="sf.html" class="b_menu" id="b_sf">Salesforce Projects</a>
+            <a href="side.html" class="b_menu" id="b_about">Side Projects</a>
+            <a href="contact.html" class="b_menu" id="b_contact">Contact Me</a>
+            
+        </div>
+
+
+
+        <div id="mainWindow" class="aboutMe"> <!--Shows selected category content -->
+            <img src="img/profilepic.png" id="profilePic">
+            <p>
+                About me
+            </p>
+        </div>
+    </div>
+</body>
+</html>
