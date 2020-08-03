@@ -1,0 +1,65 @@
+#menuToggle
+{
+  width: 80px;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.76);
+  position: absolute;
+  text-align: center;
+
+  display: inline-flex;
+  flex-direction: column;
+
+
+  transition: all .8s ease;
+  z-index: 2;
+  font-size: xx-large;
+}
+
+#menuToggle:hover{
+  background-color: rgba(68, 68, 68, 0.96);
+  width: 400px;
+  height: 40%;
+  font-size: x-large;
+  
+}
+
+#menuToggle:hover .menuText{
+    visibility: visible;
+    opacity: 1;  
+    font-size: inherit; 
+}
+
+#menuToggle:hover .menuLink{
+    column-gap: .5em;
+    height: 25%;
+}
+
+.menuLink{
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    transition: font-size .6s ease;
+    transition: height .6s ease;
+
+}
+
+.menuLink:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    font-size: larger;
+}
+
+.menuText{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
+    transition: font-size .6s ease;
+    font-size: 0px;
+}
+
+.current{
+    color: rgba(255, 255, 255, 0.81);
+}
+
